@@ -1,0 +1,7 @@
+type: hyperskill
+title: Salary Prediction
+language: English
+summary: Python project on linear regression.
+programming_language: Python
+content:
+- salary-prediction
