@@ -54,9 +54,9 @@ class Stage3Test(StageTest):
                  1.079815132586217e+19, 1.0798151325862996e+19, 1222523.783203125, 234981.28515625, 529309.6640625,
                  174318.921875, -118631.8505859375]
         check_num_values(coefs, user_values,
-                              "Incorrect coefficients.\n"
-                              "Make sure that you provide numbers in the correct order.\n",
-                              "Also note that you have to use random_seed=100 and test_size=0.3 in train_test_split function to get correct results."
+                              message="Incorrect coefficients.\n"
+                              "Make sure that you provide numbers in the correct order.\n"
+                              "Also note that you have to use random_seed=100 and test_size=0.3 in train_test_split function to get correct results.",
                               rel_tol=1.0e-2)
 
         return CheckResult.correct()
