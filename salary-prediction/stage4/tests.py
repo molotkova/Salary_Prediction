@@ -41,7 +41,7 @@ class Stage4Test(StageTest):
         # check values
         user_values = [float(value) for value in user_output.split()]
 
-        mape_score = [1.2470867225927562]
+        mape_score = [1.2278879606899635]
         check_num_values(mape_score, user_values[:1],
                               "The submitted value (MAPE score) is wrong.",
                               rel_tol=1.0e-2)
