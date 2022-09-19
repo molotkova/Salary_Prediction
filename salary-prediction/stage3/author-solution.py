@@ -1,4 +1,5 @@
 import pandas as pd
+
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_percentage_error as mape
@@ -13,9 +14,6 @@ verbose = False
 # Now X contains all variables except for salary
 X = data.drop('salary', axis=1)
 y = data['salary']
-
-# One-hot encoding of categorical variables
-X = pd.get_dummies(X.select_dtypes('object')).join(X.select_dtypes('number'))
 
 # Split train and test
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=100)

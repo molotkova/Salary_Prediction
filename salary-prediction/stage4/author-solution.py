@@ -12,10 +12,7 @@ data = pd.read_csv('data.csv')
 verbose = False
 
 # Draw correlation matrix to check for multicollinearity
-# First, we have to convert categorical variables to numeric
 X = data.drop('salary', axis=1)
-X = X.select_dtypes('number')
-# Next, we build correlation matrix
 # From the matrix, we remove all elements with coef == 1.0 (it's the same column) or coef < 0.2 (too low)
 # The rest are the variables which should be treated with caution
 X.corr().applymap(lambda x: np.nan if x < 0.2 or x == 1.0 else x)

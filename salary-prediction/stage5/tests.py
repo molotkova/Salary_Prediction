@@ -41,10 +41,11 @@ class Stage5Test(StageTest):
         # check values
         user_values = [float(value) for value in user_output.split()]
 
-        mape_score = [1.0819660537073987]
+        mape_score = [0.9470062682546107]
         check_num_values(mape_score, user_values[:1],
-                              "The submitted value (MAPE score) is wrong.",
-                              rel_tol=1.0e-2)
+                              "The submitted value (MAPE score) is wrong.\n"
+                              "Ensure that you use the best set of variables from the previous stage as predictors.",
+                              rel_tol=1.0e-3)
 
         return CheckResult.correct()
 
