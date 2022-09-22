@@ -1,3 +1,4 @@
+Data/
 .idea/
 venv/
 salary-prediction/stage[1-5]/__pycache__/

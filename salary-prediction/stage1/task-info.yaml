@@ -4,7 +4,5 @@ files:
   visible: true
 - name: author-solution.py
   visible: true
-- name: data.csv
-  visible: true
 - name: tests.py
   visible: false

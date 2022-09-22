@@ -1,10 +1,6 @@
 type: edu
 files:
-- name: stage3.py
-  visible: true
 - name: tests.py
   visible: false
 - name: author-solution.py
-  visible: true
-- name: data.csv
   visible: true
